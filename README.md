@@ -9,7 +9,7 @@ This repository is an experimental showcase for getting CMIP6 climate data with 
 - [xESMF](https://xesmf.readthedocs.io/en/latest/): Universal Regridder for Geospatial Data (only for Linux and Mac, an alternative is the [interp](http://xarray.pydata.org/en/stable/interpolation.html#example) function from xarray)
 - [Dask](https://dask.org/) provides advanced parallelism for analytics ([jacobtomlinson/dask-video-tutorial-2020](https://github.com/jacobtomlinson/dask-video-tutorial-2020) / [Dask | SciPy 2020](https://www.youtube.com/watch?v=EybGGLbLipI&list=PLYx7XA2nY5Gde-6QO98KUJ9iL_WW4rgYf&index=6))
 
-## Climate analysis
+## Climate analysis
 
 The purpose of this analysis will be to make a figure of the time series over the historical period, as well as projections for future scenarios.
 
