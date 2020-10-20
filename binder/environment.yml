@@ -1,0 +1,25 @@
+name: intake_CMIP6_v0
+channels:
+  - conda-forge
+dependencies:
+  # NetCDF files
+  - xarray
+  - netcdf4
+  - nc-time-axis
+  # Regrid
+  - esmpy
+  - xesmf
+  # Parallel
+  - dask
+  - python-graphviz
+  - dask-labextension
+  - nodejs>=10.0
+  - nbresuse
+  # CMIP6
+  - intake-esm
+  - gcsfs
+  - zarr
+  # Plots
+  - proplot=0.6.4
+  - matplotlib<=3.2
+  - cartopy
