@@ -4,7 +4,7 @@ channels:
 dependencies:
   # Pangeo (version needs to fit with Dockerfile)
   # https://medium.com/pangeo/managing-environments-5604d848367a
-  - pangeo-notebook==2020.05.04
+  - pangeo-notebook==2020.10.08
   # NetCDF files
   - xarray
   - netcdf4
