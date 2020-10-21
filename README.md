@@ -1,6 +1,6 @@
 # Intake CMIP6
 
-[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/mickaellalande/intake_CMIP6/main?urlpath=lab?filepath=CMIP6_global_projections.ipynb) and open the example notebook: `CMIP6_global_projections.ipynb`
+[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/mickaellalande/intake_CMIP6/pangeo-notebook) and open the example notebook: `CMIP6_global_projections.ipynb`
 
 This repository is an experimental showcase for getting CMIP6 climate data with [Intake-esm](https://intake-esm.readthedocs.io/en/latest/).  The following packages are used:
 
