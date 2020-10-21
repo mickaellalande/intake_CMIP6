@@ -27,9 +27,64 @@ It is running on Google Cloud Platform using credits generously donated by Googl
 - See this great presentation: [Tech Talk: Intake](https://www.youtube.com/watch?v=urL17kRUinE&amp;feature=youtu.be) from [Aaron Spring](https://github.com/aaronspring/pydata_python_in_big_data_in_climate_science)
 - [New climate simulation data models now available in Google Cloud](https://cloud.google.com/blog/products/data-analytics/new-climate-model-data-now-google-public-datasets)
 
-## Manual installation
 
-TODO
+
+---
+
+## Manual installation (tested only on Linux)
+If you want to run this code on your own computer, follow the next steps: 
+
+1. **Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)** (for Linux):
+```bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh 
+sh Miniconda3-latest-Linux-x86_64.sh 
+```
+You should have a `(base)` in front of your line in your terminal, that correspond to the **root** environment.
+
+2.  **Add [conda-forge](https://conda-forge.org/docs/user/introduction.html)** and **update** your installation:  
+```bash
+conda config --add channels conda-forge  
+conda config --set channel_priority strict  
+conda update -n base -c defaults conda  
+```
+3. **Create an environment** (it is recommended not to use the root environment so that you keep a clean installation: [https://conda-forge.org/docs/user/introduction.html](https://conda-forge.org/docs/user/introduction.html)):
+```bash
+conda create -n intake_CMIP6_v0
+```
+```bash
+conda activate intake_CMIP6_v0
+```
+```bash
+conda install xarray netcdf4 nc-time-axis xesmf esmpy \
+dask python-graphviz dask-labextension "nodejs>=10.0" nbresuse \
+intake-esm gcsfs zarr "proplot=0.6.4" "matplotlib=3.2.0" cartopy \
+jupyter jupyterlab nb_conda_kernels
+```
+```bash
+# For testing xESMF (for regrid)
+pip install pytest  
+pytest -v --pyargs xesmf #all need to pass
+```
+```bash
+# Install dask-labextension
+jupyter labextension install dask-labextension
+jupyter serverextension enable dask_labextension
+```
+```bash
+jupyter lab
+```
+
+Alternatively you can install directly from the environment file instead of step 3:
+```bash
+conda env create -f envs/intake_CMIP6_v0.yml
+```
+
+More information about environments: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
+
+
+
+
 
 
 
