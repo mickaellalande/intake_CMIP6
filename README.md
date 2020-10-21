@@ -1,5 +1,7 @@
 # Intake CMIP6
 
+[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/mickaellalande/intake_CMIP6/main?urlpath=lab?filepath=CMIP6_global_projections.ipynb)
+
 This repository is an experimental showcase for getting CMIP6 climate data with [Intake-esm](https://intake-esm.readthedocs.io/en/latest/).  The following packages are used:
 
 - [Intake-esm](https://intake-esm.readthedocs.io/en/latest/): an intake plugin for parsing an Earth System Model (ESM) catalog and loading assets into xarray datasets.
@@ -16,8 +18,18 @@ The purpose of this analysis will be to make a figure of the time series over th
 
 ## Where is this running?
 
-
 This session is running on [binder.pangeo.io](https://binder.pangeo.io),
 a service designed and maintained by the [Pangeo community](https://pangeo.io) for scalable earth science.
 It is running on Google Cloud Platform using credits generously donated by Google to that Community.
+
+
+## Other links
+- See this great presentation: [Tech Talk: Intake](https://www.youtube.com/watch?v=urL17kRUinE&amp;feature=youtu.be) from [Aaron Spring](https://github.com/aaronspring/pydata_python_in_big_data_in_climate_science)
+- [New climate simulation data models now available in Google Cloud](https://cloud.google.com/blog/products/data-analytics/new-climate-model-data-now-google-public-datasets)
+
+## Manual installation
+
+TODO
+
+
 
