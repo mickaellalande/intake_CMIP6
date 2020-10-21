@@ -31,7 +31,7 @@ It is running on Google Cloud Platform using credits generously donated by Googl
 
 ---
 
-## Manual installation (tested only on Linux)
+## Manual installation (tested only on Linux)
 If you want to run this code on your own computer, follow the next steps: 
 
 1. **Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)** (for Linux):
