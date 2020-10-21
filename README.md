@@ -26,6 +26,7 @@ It is running on Google Cloud Platform using credits generously donated by Googl
 ## Other links
 - See this great presentation: [Tech Talk: Intake](https://www.youtube.com/watch?v=urL17kRUinE&amp;feature=youtu.be) from [Aaron Spring](https://github.com/aaronspring/pydata_python_in_big_data_in_climate_science)
 - [New climate simulation data models now available in Google Cloud](https://cloud.google.com/blog/products/data-analytics/new-climate-model-data-now-google-public-datasets)
+- [Managing Pangeo Environments for Distributed Computing](https://medium.com/pangeo/managing-environments-5604d848367a)
 
 
 

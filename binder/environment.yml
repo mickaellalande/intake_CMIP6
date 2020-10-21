@@ -2,6 +2,9 @@ name: intake_CMIP6_v0
 channels:
   - conda-forge
 dependencies:
+  # Pangeo (version needs to fit with Dockerfile)
+  # https://medium.com/pangeo/managing-environments-5604d848367a
+  - pangeo-notebook==2020.05.04
   # NetCDF files
   - xarray
   - netcdf4
@@ -9,12 +12,6 @@ dependencies:
   # Regrid
   - esmpy
   - xesmf
-  # Parallel
-  - dask
-  - python-graphviz
-  - dask-labextension
-  - nodejs>=10.0
-  - nbresuse
   # CMIP6
   - intake-esm
   - gcsfs
@@ -23,3 +20,6 @@ dependencies:
   - proplot=0.6.4
   - matplotlib=3.2.0
   - cartopy
+  # Miscellaneous
+  - python-graphviz
+  - nbresuse
